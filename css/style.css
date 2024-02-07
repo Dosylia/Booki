@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -13,16 +14,264 @@
     color: var(--main-color);
 }
 
-body {
+h1 
+{
+    font-size: 22px;
+}
+
+
+/****** Header ***********/
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+header img
+{
+    width: auto;
+    height: 20px;
+}
+
+.nav-header nav a
+{
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.nav-header nav a:hover
+{
+    border-top: 2px var(--main-color) solid;
+    padding: 5px 10px 0px 10px;
+}
+
+
+/****** Fin Header ***********/
+
+
+/****** Main section Recherche ***********/
+
+#recherche 
+{
+    padding: 20px;
+}
+
+.filtre-ville {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.filtre-ville i {
+    margin-right: 10px;
+    background-color: #eee6e6;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    color: black;
+}
+
+.search-button {
+    background-color: var(--main-color);
+    color: #fff; 
+    padding: 10px 15px; 
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+#text-form
+{
+    border: none;
+    display: inline-block;
+    font-size: 18px; 
+    font-weight: 600;
+}
+
+.filtre-secondaire
+{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.button-filtre-secondaire
+{
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid rgb(184, 174, 174);
+    padding: 7px 10px;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+
+.button-filtre-secondaire:hover
+{
+    background-color: #aeccf8;
+}
+
+.info 
+{
+    display: flex;
+    align-items: center;
+}
+
+.info-bubble 
+{
+    padding: 2px 8px;
+    border: 1px solid rgb(184, 174, 174);
+    border-radius: 50%;
+    font-size: 10px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    font-weight: 800;
+}
+
+.info p 
+{
+
+    margin: 0;
+}
+
+#recherche p 
+{
+    font-size: 16px;
+}
+
+
+/****** Fin section Recherche ***********/
+
+
+/****** Main section Hébergement ***********/
+
+
+.content-hebergement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.article-hebergement {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.article-hebergement h3, .article-hebergement p   
+{
+    margin: 10px 0 5px 0;
+}
+
+
+.article-hebergement img {
+    width: 95%; 
+    height: 100px;
+    object-fit: cover; 
+    border: none;
+    border-radius: 20px 20px 0 0; 
+    margin: 5px 0 0 0;
+}
+
+.cta-button {
+    margin-top: 5px;
+    border: none;
+    background-color: var(--main-bg-color);
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cta 
+{
+    text-align: left;
+}
+
+.font-weight
+{
+    font-weight: 600;
+}
+
+/****** Fin section Hébergement ***********/
+
+
+
+
+/****** Début section activité ***********/
+
+.activites-content
+{
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
+
+.activites-content article
+{
+    width: 25%;
+}
+
+.activites-content article img 
+{
+    width: 100%;
+    height: 400px;
+    border-radius: 20px 20px 0 0; 
+}
+
+
+
+/****** Fin section activités ***********/
+
+
+/****** Début footer  ***********/
+
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h4
+{
+    font-size: 18px;
+}
+
+.nav-footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+/****** Fin footer  ***********/
 
 .main-container {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    margin: auto;
 }
 
 a {
@@ -72,7 +321,7 @@ a {
 }
 
 /****** Hebergements ***********/
-.hebergements {
+#hebergements {
     width: 65%;
 }
 
