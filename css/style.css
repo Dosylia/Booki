@@ -69,10 +69,10 @@ header img
     font-weight: 600;
     font-size: 18px;
     margin-bottom: 20px;
+    width: fit-content;
 }
 
 .filtre-ville .fa-solid.fa-location-dot {
-    margin-right: 10px;
     background-color: #eee6e6;
     padding: 10px 15px;
     border: none;
@@ -88,7 +88,6 @@ header img
     border: none;
     border-radius: 0 20px 20px 0;
     cursor: pointer;
-    margin-left: 10px;
     font-weight: 600;
 }
 
@@ -97,12 +96,22 @@ header img
     display: none;
 }
 
+.form-search 
+{
+    width: fit-content;
+    text-align: center;
+    padding: 7px 0;
+    border-top: 1px solid var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color);
+}
+
 #text-form
 {
     border: none;
     display: inline-block;
     font-size: 18px; 
     font-weight: 600;
+    text-align: center;
 }
 
 .filtre-secondaire
@@ -114,12 +123,17 @@ header img
     align-items: center;
 }
 
+.filtre-secondaire h3 
+{
+    margin-right: 10px;
+}
+
 .button-filtre-secondaire
 {
     border-radius: 50px;
     background-color: white;
     border: 1px solid rgb(184, 174, 174);
-    padding: 7px 10px;
+    padding: 15px 15px;
     font-weight: 600;
     font-size: 18px;
     margin: 0 5px;
@@ -180,12 +194,25 @@ header img
     margin-bottom: 20px;
 }
 
+#hebergements 
+{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#hebergements h2 
+{
+    margin-bottom: 20px;
+}
+
 .article-hebergement {
     background-color: white;
     border: none;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 10px;
+    padding: 2px;
 }
 
 .article-hebergement h3, .article-hebergement p   
@@ -193,14 +220,18 @@ header img
     margin: 10px 0 5px 0;
 }
 
+.article-hebergement h3, .article-hebergement p, .article-hebergement .card-rating
+{
+    padding: 0 10px;
+}
+
 
 .article-hebergement img {
-    width: 95%; 
+    width: 100%; 
     height: 100px;
     object-fit: cover; 
     border: none;
     border-radius: 20px 20px 0 0; 
-    margin: 5px 0 0 0;
 }
 
 .cta-button {
@@ -249,11 +280,23 @@ header img
     object-fit: cover; 
 }
 
+#activites h2 
+{
+    margin: 50px 0 40px 0;
+}
+
 .activites-content article h3 
 {
     padding-left: 10px;
+    padding-bottom: 20px;
 }
 
+.activites-content article 
+{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background-color: none;
+}
 
 
 /****** Fin section activités ***********/
@@ -272,6 +315,7 @@ footer
     box-sizing: border-box;
     gap: 20%;
     margin: auto;
+    background-color: var(--main-bg-color);
 }
 
 footer h4
