@@ -196,15 +196,10 @@ header img
 
 #hebergements 
 {
-    padding: 30px;
+    padding: 15px 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-
-#hebergements h2 
-{
-    margin-bottom: 20px;
 }
 
 .article-hebergement {
