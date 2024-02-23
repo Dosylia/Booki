@@ -137,6 +137,7 @@ header img
     font-weight: 600;
     font-size: 18px;
     margin: 0 5px;
+    text-align: left;
 }
 
 
@@ -544,6 +545,11 @@ a {
         margin-bottom: 20px;
     }
 
+    .filtre-secondaire-content .fa-solid 
+    {
+        padding-right: 10px;
+    }
+
     .search-button
     {
         display: none;
@@ -608,6 +614,16 @@ a {
 
     .populaires-cards a {
         width: 100%;
+    }
+
+    #hebergements h2 
+    {
+        margin-bottom: 20px;
+    }
+
+    #hebergements
+    {
+        background-color: white;
     }
 
     .content-hebergement {
