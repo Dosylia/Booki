@@ -19,6 +19,11 @@ h1
     font-size: 22px;
 }
 
+body 
+{
+    margin: 0 auto;
+}
+
 
 /****** Header ***********/
 
@@ -27,7 +32,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 20px;
+    padding: 20px 20px;
 }
 
 header img
@@ -45,7 +50,7 @@ header img
 .nav-header nav a:hover
 {
     border-top: 2px var(--main-color) solid;
-    padding: 5px 10px 0px 10px;
+    padding: 20px 10px 0px 10px;
     color: var(--main-color);
 }
 
@@ -58,6 +63,7 @@ header img
 #recherche 
 {
     padding: 20px;
+    width: 100%;
 }
 
 .filtre-ville {
@@ -68,13 +74,13 @@ header img
     cursor: pointer;
     font-weight: 600;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin: 30px 0;
     width: fit-content;
 }
 
 .filtre-ville .fa-solid.fa-location-dot {
     background-color: #eee6e6;
-    padding: 10px 15px;
+    padding: 20px 15px;
     border: none;
     border-radius: 20px 0 0 20px;
     color: black;
@@ -84,7 +90,7 @@ header img
 .search-button {
     background-color: var(--main-color);
     color: #fff; 
-    padding: 10px 15px; 
+    padding: 20px 15px; 
     border: none;
     border-radius: 0 20px 20px 0;
     cursor: pointer;
@@ -100,7 +106,7 @@ header img
 {
     width: fit-content;
     text-align: center;
-    padding: 7px 0;
+    padding: 20px 0;
     border-top: 1px solid var(--main-bg-color);
     border-bottom: 1px solid var(--main-bg-color);
 }
@@ -135,7 +141,7 @@ header img
     border: 1px solid rgb(184, 174, 174);
     padding: 15px 15px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 17px;
     margin: 0 5px;
     text-align: left;
 }
@@ -187,20 +193,11 @@ header img
 .content-hebergement {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .content-hebergement a{
     width: calc(33.33% - 20px);
-    margin-bottom: 20px;
-}
-
-#hebergements 
-{
-    padding: 15px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
 .article-hebergement {
@@ -208,7 +205,8 @@ header img
     border: none;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 2px;
+    padding: 5px;
+    margin-top: 33px;
 }
 
 .article-hebergement h3, .article-hebergement p   
@@ -231,7 +229,7 @@ header img
 }
 
 .cta-button {
-    margin-top: 5px;
+    margin-top: 33px;
     border: none;
     background-color: var(--main-bg-color);
     font-weight: 600;
@@ -281,6 +279,12 @@ header img
     margin: 50px 0 40px 0;
 }
 
+#activites
+{
+    margin-bottom: 20px;
+    padding-left: 17px;
+}
+
 .activites-content article h3 
 {
     padding-left: 10px;
@@ -325,6 +329,7 @@ footer h4
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -387,6 +392,7 @@ a {
 /****** Hebergements ***********/
 #hebergements {
     width: 65%;
+    padding-left: 17px;
 }
 
 /****** Populaires ***********/
@@ -481,11 +487,30 @@ a {
         width: 100%;
     }
 
+    #activites
+    {
+        margin-bottom: unset;
+    }
+
+    .activites-content article h3 
+    {
+        padding-left: 10px;
+        padding-bottom: 20px;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+    }
+
     .filtre-secondaire
-{
-    flex-direction: column;
-    align-items: flex-start;
-}
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cta-button 
+    {
+        background-color: transparent;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -508,6 +533,7 @@ a {
         justify-content: center;
         align-items: center;
         padding: 20px 0;
+        width: 100%;
     }
 
     .nav-header
@@ -531,7 +557,7 @@ a {
     {
         border-bottom: 2px var(--main-color) solid;
         border-top: none;
-        padding: 0 10px 5px 10px;
+        padding: 0 0 20px 0;
     }
 
     header img 
@@ -539,15 +565,24 @@ a {
         margin-bottom: 20px;
     }
 
+    .filtre-secondaire-content 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
     .button-filtre-secondaire 
     {
-        width: 45%;
+        flex-basis: calc(50% - 10px);
+        margin: 0 5px;
         margin-bottom: 20px;
+        white-space: nowrap;
     }
 
     .filtre-secondaire-content .fa-solid 
     {
-        padding-right: 10px;
+        padding-right: 5px;
     }
 
     .search-button
@@ -560,7 +595,10 @@ a {
         width: 100%;
     }
 
-
+    .form-search 
+    {
+        width: 100%;
+    }
 
     #text-form 
     {
@@ -568,12 +606,9 @@ a {
         max-width: 100%;
     }
 
-    .form-search 
-    {
-        max-width: 60%;
-    }
 
-    .search-button-mobile {
+    .search-button-mobile 
+    {
         display: inline-block;
         background-color: var(--main-color);
         color: #fff; 
@@ -581,17 +616,25 @@ a {
         border-radius: 20px;
         cursor: pointer;
         text-align: center;
-        padding: 18px 18px;
+        padding: 20px 18px;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     }
     
-    .fa-solid.fa-magnifying-glass {
+    .fa-solid.fa-magnifying-glass 
+    {
         background-color: none;
         color: white;
     }
 
-    #hebergements {
+    #hebergements 
+    {
         order: 2;
+        padding-left: 30px;
+    }
+
+    .hebergements-and-populaires section 
+    {
+        border-radius: 0;
     }
     
     .populaires {
@@ -616,30 +659,33 @@ a {
         width: 100%;
     }
 
-    #hebergements h2 
-    {
-        margin-bottom: 20px;
-    }
-
     #hebergements
     {
         background-color: white;
     }
 
-    .content-hebergement {
+    .content-hebergement 
+    {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
-    .article-hebergement {
+    .article-hebergement 
+    {
         width: 100%;
     }
 
-    .article-hebergement img {
+    .article-hebergement img 
+    {
         width: 100%;
 
+    }
+
+    .cta-button 
+    {
+        background-color: transparent;
     }
 
     .activites-content
@@ -650,6 +696,7 @@ a {
     #activites 
     {
         padding: 30px;
+        margin-bottom: unset;
     }
 
     .activites-content a
@@ -659,7 +706,7 @@ a {
 
     .content-hebergement a {
         width: 100%;
-      }
+    }
 
     .activites-content article img 
     {
