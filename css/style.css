@@ -287,15 +287,13 @@ header img
 
 .activites-content article h3 
 {
-    padding-left: 10px;
-    padding-bottom: 20px;
+    padding: 0 10px 20px 10px;
 }
 
 .activites-content article 
 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    background-color: none;
 }
 
 
@@ -308,7 +306,6 @@ footer
 {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     width: 100%;
     max-width: 1440px;
     padding: 0 20px;
@@ -615,7 +612,7 @@ a {
     #text-form 
     {
         text-align: center;
-        max-width: 100%;
+        width: 100%;
     }
 
 
@@ -626,15 +623,14 @@ a {
         color: #fff; 
         border: none;
         border-radius: 20px;
+        padding: 20px 18px;
         cursor: pointer;
         text-align: center;
-        padding: 20px 18px;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     }
     
     .fa-solid.fa-magnifying-glass 
     {
-        background-color: none;
         color: white;
     }
 
