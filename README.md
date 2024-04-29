@@ -1,11 +1,19 @@
-# Nom du projet
-Booki Dev
+# Booki / Responsive design
+
+![Alt text](./images/booki-1.png)
+
+## What this project is for?
+School project 2 for my training as full-stack web developper with OpenClassrooms.
 
 ## Description
-C'est mon premier projet pour ma formation de développeur web avec OpenClassrooms. Le but de ce projet est de faire une page d'acceuil pour un site de voyage, cette page devra être faite en version mobile/tablette/desktop et desktop large. Pour réaliser ce projet, il m'a été fournis des maquettes figma pour avoir un aperçu du site et les composants utiles à sa réalisation.
+The aim of this project is to create a homepage for a travel website. This page should be designed for mobile, tablet, desktop, and large desktop versions. To accomplish this project, Figma mockups have been provided to give an overview of the site and the necessary components for its implementation.
 
-## Langage utilisé
-Ce projet ne contiendra que deux langages: HTML et CSS.
+## Technologies
+HTLM
+CSS
 
-## Lien hébergement git hub
+## Hosted result of project
 https://dosylia.github.io/Booki/
+
+## How to Contribute
+Contact me on my portfolio : https://www.dosylia.com/
